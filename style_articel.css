@@ -1,0 +1,90 @@
+body {
+ color: black;
+ font-family: calibri;
+ font-size: 1.5vw;
+ margin: 0 auto;
+ padding: 0.5vw;
+}
+
+
+#container {
+ max-width: 90%;
+ margin: 0 auto;
+ align-items: center;
+}
+
+.fejlec {
+	margin: 0 auto;
+	align-items: center;
+	padding: 0.5vw;
+	font-size: 2.5vw;
+	color: Navy;
+	border: 0.5px;
+	border-style: dotted;
+	border-color: Navy;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0.5vw;
+	font-size: 3vw;
+}
+
+h3 {
+	background-color: rgb(200, 198, 198)
+}
+
+p {
+	margin: 0vw;
+	padding: 1vw;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+	background-color: Navy;
+}
+
+a:hover {
+  color: white;
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+	align-items: center;
+}
+
+.sav {
+	display: flex;
+	flex-wrap: nowrap;
+	# background-color: Navy;
+	margin: 1%;
+	color: Navy;
+	border: 0.5px;
+	border-style: dotted;
+	border-color: Navy;
+}
+
+.sav > div {
+	justify-content: left;
+	align-items: center;
+	font-size: 2vw;
+	#color: white;
+	color: Navy;
+	margin: 1%;
+}
+
+button{
+	float: right;
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 2vw;
+	#background-color: rgb(32, 178, 170);
+	#background-color: SlateBlue;
+	font-size: 3vw;
+	font-family: Lucida Console;
+}
+
+
