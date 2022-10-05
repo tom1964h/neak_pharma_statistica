@@ -14180,6 +14180,8 @@ a.anchor-link {
 <span class="s1">&#39;Borsod-Abaúj-Zemplén&#39;</span><span class="p">:</span><span class="s1">&#39;BO&#39;</span><span class="p">,</span>
 <span class="s1">&#39;Budapest&#39;</span><span class="p">:</span><span class="s1">&#39;BP&#39;</span><span class="p">,</span>
 <span class="s1">&#39;Csongrád-Csanád&#39;</span><span class="p">:</span> <span class="s1">&#39;CS&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Csongrád-Csanád &#39;</span><span class="p">:</span> <span class="s1">&#39;CS&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Csongrád-Csanád  &#39;</span><span class="p">:</span> <span class="s1">&#39;CS&#39;</span><span class="p">,</span>
 <span class="s1">&#39;Csongrád&#39;</span><span class="p">:</span><span class="s1">&#39;CS&#39;</span><span class="p">,</span>
 <span class="s1">&#39;Fejér&#39;</span><span class="p">:</span><span class="s1">&#39;FE&#39;</span><span class="p">,</span>
 <span class="s1">&#39;Fejé&#39;</span><span class="p">:</span><span class="s1">&#39;FE&#39;</span><span class="p">,</span>
@@ -14328,7 +14330,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># declarations:</span>
@@ -14344,10 +14346,10 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># main loader process</span>
@@ -14385,32 +14387,6 @@ a.anchor-link {
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>	The list of processed files is loaded
-	Directory reading ready [&#39;OEP_GYSZ_Forg_202208.mdb&#39;]
-202208 query: SELECT * FROM Megyei_forgalom
-	MS-Access file reading OK
-ready
-	The nowProcessed filename list writed to file.
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14457,10 +14433,10 @@ ready
 </ul>
 
 </div>
-</div>df = df_recent     # továbbfeldolgozás<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>df = df_recent     # továbbfeldolgozás<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># a beolvasásnál készített already_scanned.csv file visszaolvasása</span>
@@ -14472,193 +14448,6 @@ ready
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>startTime</th>
-      <th>filename</th>
-      <th>year</th>
-      <th>period</th>
-      <th>size</th>
-      <th>created</th>
-      <th>sourceRecordNumber</th>
-      <th>dfSumBoxMill</th>
-      <th>dfSumPriceBill</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>22-07-11_17-38-47</td>
-      <td>200601.mdb</td>
-      <td>2006</td>
-      <td>200601</td>
-      <td>36003840</td>
-      <td>2022/07/11, 15:37:59</td>
-      <td>75334</td>
-      <td>18.521485</td>
-      <td>38.657073</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>22-07-11_17-38-47</td>
-      <td>200602.mdb</td>
-      <td>2006</td>
-      <td>200602</td>
-      <td>36048896</td>
-      <td>2022/07/11, 15:37:59</td>
-      <td>75164</td>
-      <td>17.655448</td>
-      <td>37.332308</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>22-07-11_17-38-47</td>
-      <td>200603.mdb</td>
-      <td>2006</td>
-      <td>200603</td>
-      <td>36667392</td>
-      <td>2022/07/11, 15:37:59</td>
-      <td>76627</td>
-      <td>19.989567</td>
-      <td>42.924976</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>22-07-11_17-38-47</td>
-      <td>200604.mdb</td>
-      <td>2006</td>
-      <td>200604</td>
-      <td>36282368</td>
-      <td>2022/07/11, 15:38:00</td>
-      <td>75955</td>
-      <td>17.563378</td>
-      <td>38.227791</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>22-07-11_17-38-47</td>
-      <td>200605.mdb</td>
-      <td>2006</td>
-      <td>200605</td>
-      <td>36950016</td>
-      <td>2022/07/11, 15:38:00</td>
-      <td>77285</td>
-      <td>19.693307</td>
-      <td>43.384919</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>195</th>
-      <td>22-07-11_19-09-57</td>
-      <td>OEP_GYSZ_Forg_202204.mdb</td>
-      <td>2022</td>
-      <td>202204</td>
-      <td>36458496</td>
-      <td>2022/07/11, 17:09:18</td>
-      <td>116689</td>
-      <td>15.557308</td>
-      <td>47.674729</td>
-    </tr>
-    <tr>
-      <th>196</th>
-      <td>22-07-11_19-09-57</td>
-      <td>OEP_GYSZ_Forg_202205.mdb</td>
-      <td>2022</td>
-      <td>202205</td>
-      <td>36782080</td>
-      <td>2022/07/11, 17:09:19</td>
-      <td>117621</td>
-      <td>16.322785</td>
-      <td>50.535769</td>
-    </tr>
-    <tr>
-      <th>197</th>
-      <td>22-07-27_18-07-15</td>
-      <td>OEP_GYSZ_Forg_202206.mdb</td>
-      <td>2022</td>
-      <td>202206</td>
-      <td>36417536</td>
-      <td>2022/07/27, 12:21:48</td>
-      <td>116591</td>
-      <td>16.050452</td>
-      <td>50.421442</td>
-    </tr>
-    <tr>
-      <th>198</th>
-      <td>22-08-29_11-36-44</td>
-      <td>OEP_GYSZ_Forg_202207.mdb</td>
-      <td>2022</td>
-      <td>202207</td>
-      <td>36020224</td>
-      <td>2022/08/26, 11:49:06</td>
-      <td>115056</td>
-      <td>14.974588</td>
-      <td>47.532797</td>
-    </tr>
-    <tr>
-      <th>199</th>
-      <td>22-09-22_18-23-38</td>
-      <td>OEP_GYSZ_Forg_202208.mdb</td>
-      <td>2022</td>
-      <td>202208</td>
-      <td>36388864</td>
-      <td>2022/09/22, 06:48:21</td>
-      <td>116360</td>
-      <td>15.821849</td>
-      <td>51.283009</td>
-    </tr>
-  </tbody>
-</table>
-<p>200 rows × 9 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14692,6 +14481,7 @@ ready
 <span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;sumfogyar2006&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">sumfogyar2006</span>
 <span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;changeSumDob&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(((</span><span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;sumdob&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df_years</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)[</span><span class="s1">&#39;sumdob&#39;</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">decimals</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;changeSumFogyar&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(((</span><span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;sumfogyar&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df_years</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)[</span><span class="s1">&#39;sumfogyar&#39;</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">decimals</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;changeSumTerdij&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(((</span><span class="n">df_years</span><span class="p">[</span><span class="s1">&#39;sumterdij&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df_years</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)[</span><span class="s1">&#39;sumterdij&#39;</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">decimals</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">df_years</span> <span class="o">=</span> <span class="n">df_years</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
@@ -14700,10 +14490,10 @@ ready
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_years</span>
@@ -14714,304 +14504,10 @@ ready
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>year</th>
-      <th>sumdob</th>
-      <th>sumtb</th>
-      <th>sumfogyar</th>
-      <th>sumterdij</th>
-      <th>ttt_db</th>
-      <th>sumdob2006</th>
-      <th>sumtb2006</th>
-      <th>sumfogyar2006</th>
-      <th>changeSumDob</th>
-      <th>changeSumFogyar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2006</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>1.046341e+11</td>
-      <td>4925</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>0.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2007</td>
-      <td>1.967550e+08</td>
-      <td>3.146855e+11</td>
-      <td>4.338899e+11</td>
-      <td>1.192047e+11</td>
-      <td>4750</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-12.26</td>
-      <td>-11.08</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2008</td>
-      <td>1.890751e+08</td>
-      <td>3.288048e+11</td>
-      <td>4.419597e+11</td>
-      <td>1.131452e+11</td>
-      <td>4372</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-3.90</td>
-      <td>1.86</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2009</td>
-      <td>2.114415e+08</td>
-      <td>3.509138e+11</td>
-      <td>4.666973e+11</td>
-      <td>1.157821e+11</td>
-      <td>5189</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>11.83</td>
-      <td>5.60</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2010</td>
-      <td>2.038948e+08</td>
-      <td>3.687428e+11</td>
-      <td>4.849429e+11</td>
-      <td>1.162015e+11</td>
-      <td>5295</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-3.57</td>
-      <td>3.91</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>2011</td>
-      <td>2.072410e+08</td>
-      <td>3.817761e+11</td>
-      <td>5.016522e+11</td>
-      <td>1.198760e+11</td>
-      <td>5649</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>1.64</td>
-      <td>3.45</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2012</td>
-      <td>2.014398e+08</td>
-      <td>3.166038e+11</td>
-      <td>4.290594e+11</td>
-      <td>1.124553e+11</td>
-      <td>5645</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-2.80</td>
-      <td>-14.47</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>2013</td>
-      <td>2.001104e+08</td>
-      <td>2.986417e+11</td>
-      <td>4.084084e+11</td>
-      <td>1.097691e+11</td>
-      <td>5420</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.66</td>
-      <td>-4.81</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2014</td>
-      <td>2.034786e+08</td>
-      <td>3.036588e+11</td>
-      <td>4.158247e+11</td>
-      <td>1.121658e+11</td>
-      <td>5324</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>1.68</td>
-      <td>1.82</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>2015</td>
-      <td>2.051281e+08</td>
-      <td>3.240291e+11</td>
-      <td>4.409120e+11</td>
-      <td>1.168424e+11</td>
-      <td>5275</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>0.81</td>
-      <td>6.03</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>2016</td>
-      <td>2.050875e+08</td>
-      <td>3.407646e+11</td>
-      <td>4.616961e+11</td>
-      <td>1.209313e+11</td>
-      <td>5217</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.02</td>
-      <td>4.71</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>2017</td>
-      <td>2.052538e+08</td>
-      <td>3.515345e+11</td>
-      <td>4.760961e+11</td>
-      <td>1.245613e+11</td>
-      <td>5222</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>0.08</td>
-      <td>3.12</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>2018</td>
-      <td>2.052067e+08</td>
-      <td>3.735502e+11</td>
-      <td>5.008184e+11</td>
-      <td>1.274085e+11</td>
-      <td>5118</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.02</td>
-      <td>5.19</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>2019</td>
-      <td>2.027733e+08</td>
-      <td>4.001562e+11</td>
-      <td>5.310880e+11</td>
-      <td>1.309264e+11</td>
-      <td>5159</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-1.19</td>
-      <td>6.04</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>2020</td>
-      <td>2.020601e+08</td>
-      <td>4.229058e+11</td>
-      <td>5.587157e+11</td>
-      <td>1.358009e+11</td>
-      <td>5167</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.35</td>
-      <td>5.20</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>2021</td>
-      <td>1.946226e+08</td>
-      <td>4.318035e+11</td>
-      <td>5.685446e+11</td>
-      <td>1.367181e+11</td>
-      <td>5300</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-3.68</td>
-      <td>1.76</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>2022</td>
-      <td>1.274939e+08</td>
-      <td>2.988775e+11</td>
-      <td>3.939876e+11</td>
-      <td>9.508988e+10</td>
-      <td>5175</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-34.49</td>
-      <td>-30.70</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_years</span><span class="o">.</span><span class="n">to_sql</span><span class="p">((</span><span class="s2">&quot;df_years&quot;</span><span class="p">),</span> <span class="n">db</span><span class="p">,</span> <span class="n">if_exists</span> <span class="o">=</span> <span class="s1">&#39;replace&#39;</span><span class="p">)</span>
@@ -15052,10 +14548,10 @@ ready
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_aug</span>
@@ -15064,120 +14560,6 @@ ready
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[103]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>year</th>
-      <th>sumdob8</th>
-      <th>sumtb8</th>
-      <th>sumfogyar8</th>
-      <th>sumterdij8</th>
-      <th>ttt_db8</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2016</td>
-      <td>1.354375e+08</td>
-      <td>2.230482e+11</td>
-      <td>3.026832e+11</td>
-      <td>7.963482e+10</td>
-      <td>5050</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2017</td>
-      <td>1.360539e+08</td>
-      <td>2.326854e+11</td>
-      <td>3.150845e+11</td>
-      <td>8.239894e+10</td>
-      <td>5086</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2018</td>
-      <td>1.366200e+08</td>
-      <td>2.460698e+11</td>
-      <td>3.306135e+11</td>
-      <td>8.468438e+10</td>
-      <td>4982</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2019</td>
-      <td>1.341312e+08</td>
-      <td>2.636859e+11</td>
-      <td>3.495211e+11</td>
-      <td>8.583264e+10</td>
-      <td>4974</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2020</td>
-      <td>1.345720e+08</td>
-      <td>2.790105e+11</td>
-      <td>3.689581e+11</td>
-      <td>8.994241e+10</td>
-      <td>4990</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>2021</td>
-      <td>1.265930e+08</td>
-      <td>2.811049e+11</td>
-      <td>3.691733e+11</td>
-      <td>8.805494e+10</td>
-      <td>5075</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2022</td>
-      <td>1.274939e+08</td>
-      <td>2.988775e+11</td>
-      <td>3.939876e+11</td>
-      <td>9.508988e+10</td>
-      <td>5175</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15194,174 +14576,6 @@ ready
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[105]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_monthly</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[105]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>year</th>
-      <th>sumdob</th>
-      <th>sumtb</th>
-      <th>sumfogyar</th>
-      <th>sumterdij</th>
-      <th>ttt_db</th>
-      <th>sumdob2006</th>
-      <th>sumtb2006</th>
-      <th>sumfogyar2006</th>
-      <th>changeSumDob</th>
-      <th>changeSumFogyar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2016</td>
-      <td>2.050875e+08</td>
-      <td>3.407646e+11</td>
-      <td>4.616961e+11</td>
-      <td>1.209313e+11</td>
-      <td>5217</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.02</td>
-      <td>4.71</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2017</td>
-      <td>2.052538e+08</td>
-      <td>3.515345e+11</td>
-      <td>4.760961e+11</td>
-      <td>1.245613e+11</td>
-      <td>5222</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>0.08</td>
-      <td>3.12</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2018</td>
-      <td>2.052067e+08</td>
-      <td>3.735502e+11</td>
-      <td>5.008184e+11</td>
-      <td>1.274085e+11</td>
-      <td>5118</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.02</td>
-      <td>5.19</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2019</td>
-      <td>2.027733e+08</td>
-      <td>4.001562e+11</td>
-      <td>5.310880e+11</td>
-      <td>1.309264e+11</td>
-      <td>5159</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-1.19</td>
-      <td>6.04</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2020</td>
-      <td>2.020601e+08</td>
-      <td>4.229058e+11</td>
-      <td>5.587157e+11</td>
-      <td>1.358009e+11</td>
-      <td>5167</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.35</td>
-      <td>5.20</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>2021</td>
-      <td>1.946226e+08</td>
-      <td>4.318035e+11</td>
-      <td>5.685446e+11</td>
-      <td>1.367181e+11</td>
-      <td>5300</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-3.68</td>
-      <td>1.76</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2022</td>
-      <td>1.274939e+08</td>
-      <td>2.988775e+11</td>
-      <td>3.939876e+11</td>
-      <td>9.508988e+10</td>
-      <td>5175</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-34.49</td>
-      <td>-30.70</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -15376,214 +14590,6 @@ ready
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[107]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_monthly</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[107]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>year</th>
-      <th>sumdob</th>
-      <th>sumtb</th>
-      <th>sumfogyar</th>
-      <th>sumterdij</th>
-      <th>ttt_db</th>
-      <th>sumdob2006</th>
-      <th>sumtb2006</th>
-      <th>sumfogyar2006</th>
-      <th>changeSumDob</th>
-      <th>changeSumFogyar</th>
-      <th>sumdob8</th>
-      <th>sumtb8</th>
-      <th>sumfogyar8</th>
-      <th>sumterdij8</th>
-      <th>ttt_db8</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2016</td>
-      <td>2.050875e+08</td>
-      <td>3.407646e+11</td>
-      <td>4.616961e+11</td>
-      <td>1.209313e+11</td>
-      <td>5217</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.02</td>
-      <td>4.71</td>
-      <td>1.354375e+08</td>
-      <td>2.230482e+11</td>
-      <td>3.026832e+11</td>
-      <td>7.963482e+10</td>
-      <td>5050</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2017</td>
-      <td>2.052538e+08</td>
-      <td>3.515345e+11</td>
-      <td>4.760961e+11</td>
-      <td>1.245613e+11</td>
-      <td>5222</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>0.08</td>
-      <td>3.12</td>
-      <td>1.360539e+08</td>
-      <td>2.326854e+11</td>
-      <td>3.150845e+11</td>
-      <td>8.239894e+10</td>
-      <td>5086</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2018</td>
-      <td>2.052067e+08</td>
-      <td>3.735502e+11</td>
-      <td>5.008184e+11</td>
-      <td>1.274085e+11</td>
-      <td>5118</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.02</td>
-      <td>5.19</td>
-      <td>1.366200e+08</td>
-      <td>2.460698e+11</td>
-      <td>3.306135e+11</td>
-      <td>8.468438e+10</td>
-      <td>4982</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2019</td>
-      <td>2.027733e+08</td>
-      <td>4.001562e+11</td>
-      <td>5.310880e+11</td>
-      <td>1.309264e+11</td>
-      <td>5159</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-1.19</td>
-      <td>6.04</td>
-      <td>1.341312e+08</td>
-      <td>2.636859e+11</td>
-      <td>3.495211e+11</td>
-      <td>8.583264e+10</td>
-      <td>4974</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2020</td>
-      <td>2.020601e+08</td>
-      <td>4.229058e+11</td>
-      <td>5.587157e+11</td>
-      <td>1.358009e+11</td>
-      <td>5167</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-0.35</td>
-      <td>5.20</td>
-      <td>1.345720e+08</td>
-      <td>2.790105e+11</td>
-      <td>3.689581e+11</td>
-      <td>8.994241e+10</td>
-      <td>4990</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>2021</td>
-      <td>1.946226e+08</td>
-      <td>4.318035e+11</td>
-      <td>5.685446e+11</td>
-      <td>1.367181e+11</td>
-      <td>5300</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-3.68</td>
-      <td>1.76</td>
-      <td>1.265930e+08</td>
-      <td>2.811049e+11</td>
-      <td>3.691733e+11</td>
-      <td>8.805494e+10</td>
-      <td>5075</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2022</td>
-      <td>1.274939e+08</td>
-      <td>2.988775e+11</td>
-      <td>3.939876e+11</td>
-      <td>9.508988e+10</td>
-      <td>5175</td>
-      <td>2.242601e+08</td>
-      <td>3.833114e+11</td>
-      <td>4.879459e+11</td>
-      <td>-34.49</td>
-      <td>-30.70</td>
-      <td>1.274939e+08</td>
-      <td>2.988775e+11</td>
-      <td>3.939876e+11</td>
-      <td>9.508988e+10</td>
-      <td>5175</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -15591,6 +14597,20 @@ ready
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_monthly</span><span class="o">.</span><span class="n">to_sql</span><span class="p">((</span><span class="s2">&quot;df_monthly&quot;</span><span class="p">),</span> <span class="n">db</span><span class="p">,</span> <span class="n">if_exists</span> <span class="o">=</span> <span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_monthly</span>
 </pre></div>
 
      </div>
@@ -15615,7 +14635,7 @@ ready
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
